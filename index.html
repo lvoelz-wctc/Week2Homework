@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BAC Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Blood Alcohol Calculator</h1>
+<!-- input -->
+<fieldset>
+    <legend>Trip Details</legend>
+    <!-- bootstrap div for each input box and its label -->
+    <div class="form-group">
+        <label for="beer">Number of Beers Consumed</label>
+        <!-- <input> tags have class "form-control" -->
+        <input type="number" id="beer" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="wine">Glasses of Wine Consumed</label>
+        <input type="number" id="wine" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="shots">Number of Shots Consumed</label>
+        <input type="number" id="shots" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="weight">Your Weight in Pounds</label>
+        <input type="number" id="weight" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label for="hours">Hours Since Your First Drink</label>
+        <input type="number" id="hours" class="form-control">
+    </div>
+</fieldset>
+
+<button id="button_bac">Calculate My BAC</button>
+
+<!--output-->
+<p class="output">
+    Your Blood Alcohol Content (BAC) is <span id="bacFinal"></span>%.
+</p>
+
+<!--Scripts-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src = "code.js"></script>
+</body>
+</html>
